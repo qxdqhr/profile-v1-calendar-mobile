@@ -1,0 +1,49 @@
+{
+  "name": "@profile/calendar-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "dev": "expo start",
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "prebuild:android": "expo prebuild --platform android",
+    "build": "tsc --noEmit",
+    "build:android:release": "bash scripts/android-release-build.sh",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.28.4",
+    "@profile/calendar-shared": "workspace:*",
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "@react-native-cookies/cookies": "^6.2.1",
+    "@react-navigation/native": "^7.1.17",
+    "@react-navigation/native-stack": "^7.3.26",
+    "expo": "~52.0.47",
+    "expo-asset": "~11.0.5",
+    "expo-constants": "~17.0.8",
+    "expo-font": "~13.0.4",
+    "expo-status-bar": "~2.0.1",
+    "nativewind": "^4.2.1",
+    "react": "18.3.1",
+    "react-native": "0.76.9",
+    "react-native-css-interop": "^0.2.1",
+    "react-native-reanimated": "~3.16.1",
+    "react-native-safe-area-context": "4.12.0",
+    "react-native-screens": "~4.4.0",
+    "react-native-webview": "13.12.5",
+    "sa2kit": "3.9.4",
+    "@sa2kit-ui/rn": "link:../../../sa2kit-ui/packages/rn",
+    "@sa2kit-ui/shared": "link:../../../sa2kit-ui/packages/shared",
+    "@sa2kit-ui/theme-animal-island": "link:../../../sa2kit-ui/packages/themes/animal-island",
+    "@sa2kit-ui/tokens": "link:../../../sa2kit-ui/packages/tokens"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.24.7",
+    "@types/react": "~19.1.10",
+    "babel-preset-expo": "~12.0.6",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3"
+  }
+}
