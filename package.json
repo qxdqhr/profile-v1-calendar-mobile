@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.28.4",
-    "@profile/calendar-shared": "workspace:*",
+    "@profile/calendar-core": "workspace:*",
     "@react-native-async-storage/async-storage": "1.23.1",
     "@react-native-cookies/cookies": "^6.2.1",
     "@react-navigation/native": "^7.1.17",

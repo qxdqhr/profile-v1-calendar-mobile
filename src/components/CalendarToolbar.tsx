@@ -1,5 +1,5 @@
 import { Pressable, Text, View } from 'react-native';
-import { formatViewTitleMonth } from '@profile/calendar-shared';
+import { formatViewTitleMonth } from '@profile/calendar-core/shared';
 
 import { Button } from '../ui';
 

@@ -2,7 +2,7 @@
 
 `@profile/calendar-mobile` — 日历子应用的 React Native 客户端（Expo）。
 
-与 `web/calendar`（Web 子应用）同级，共享 `npm/calendar-shared`。
+与 `web/calendar`（Web 子应用）同级，共享 `@profile/calendar-core/shared`。
 
 ## 技术栈
 

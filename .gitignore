@@ -9,3 +9,5 @@ android/.gradle/
 android/app/build/
 android/build/
 android/.cxx/
+
+node_modules/

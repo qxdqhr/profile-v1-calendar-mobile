@@ -7,7 +7,7 @@ import {
   allDayBoundsFromDate,
   ensureEndAfterStart,
   type EventFormData,
-} from '@profile/calendar-shared';
+} from '@profile/calendar-core/shared';
 
 import { useAuth } from '../auth/AuthContext';
 import type { RootStackParamList } from '../navigation';

@@ -1,6 +1,6 @@
 import Constants from 'expo-constants';
 
-import { CalendarApiClient } from '@profile/calendar-shared';
+import { CalendarApiClient } from '@profile/calendar-core/shared';
 
 function readEnv(name: string, extraKey: string, fallback: string): string {
   const fromEnv = process.env[name]?.trim();

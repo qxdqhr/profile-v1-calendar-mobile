@@ -1,4 +1,4 @@
-import type { CalendarEvent } from '@profile/calendar-shared';
+import type { CalendarEvent } from '@profile/calendar-core/shared';
 import { Pressable, Text, View } from 'react-native';
 
 type Props = {
