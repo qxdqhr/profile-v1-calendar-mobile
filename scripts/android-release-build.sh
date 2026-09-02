@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
-MOBILE_DIR="${ROOT_DIR}/web/calendar-mobile"
+MOBILE_DIR="${ROOT_DIR}/mobile/calendar-mobile"
 ANDROID_DIR="${MOBILE_DIR}/android"
 SKIP_EXPO_PREBUILD="${SKIP_EXPO_PREBUILD:-1}"
 

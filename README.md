@@ -13,7 +13,7 @@
 ## 目录
 
 ```
-web/calendar-mobile/
+mobile/calendar-mobile/
 ├── App.tsx
 ├── global.css
 ├── tailwind.config.js
@@ -40,7 +40,7 @@ web/calendar-mobile/
 2. 配置环境变量：
 
    ```bash
-   cp web/calendar-mobile/.env.example web/calendar-mobile/.env
+   cp mobile/calendar-mobile/.env.example mobile/calendar-mobile/.env
    ```
 
    Android 模拟器请将 `localhost` 改为 `10.0.2.2`。
@@ -71,8 +71,8 @@ web/calendar-mobile/
 **首次生成签名证书（只需一次，两 App 共用）：**
 
 ```bash
-bash web/teach-hub-mobile/scripts/gen-android-keystore.sh
-# 或 bash web/calendar-mobile/scripts/gen-android-keystore.sh（会转调 teach-hub 脚本）
+bash mobile/teach-hub-mobile/scripts/gen-android-keystore.sh
+# 或 bash mobile/calendar-mobile/scripts/gen-android-keystore.sh（会转调 teach-hub 脚本）
 ```
 
 **本地 release 构建：**
@@ -85,7 +85,7 @@ export EXPO_PUBLIC_AUTH_BASE_URL='https://qhr062.top'
 export EXPO_PUBLIC_CALENDAR_API_BASE_URL='https://qhr062.top/calendar'
 
 pnpm build:calendar-mobile:android
-# 产物：web/calendar-mobile/dist/calendar-mobile-<version>+<build>.apk
+# 产物：mobile/calendar-mobile/dist/calendar-mobile-<version>+<build>.apk
 ```
 
 ### 与 Web 子应用一并打包
