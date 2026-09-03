@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
-MOBILE_DIR="${ROOT_DIR}/mobile/calendar-mobile"
+MOBILE_DIR="${ROOT_DIR}/app_mobile/calendar-mobile"
 ANDROID_DIR="${MOBILE_DIR}/android"
 SKIP_EXPO_PREBUILD="${SKIP_EXPO_PREBUILD:-1}"
 
@@ -18,7 +18,10 @@ fi
 
 echo "==> Install monorepo dependencies"
 cd "${ROOT_DIR}"
-pnpm install --frozen-lockfile
+export SA2KIT_SKIP_PREPARE=1
+export SA2KIT_SKIP_DTS=1
+pnpm install --frozen-lockfile --ignore-scripts
+pnpm build:libs
 
 echo "==> Typecheck Calendar mobile"
 pnpm --filter @profile/calendar-mobile build
