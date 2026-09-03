@@ -20,7 +20,7 @@ echo "==> Install monorepo dependencies"
 cd "${ROOT_DIR}"
 export SA2KIT_SKIP_PREPARE=1
 export SA2KIT_SKIP_DTS=1
-pnpm install --frozen-lockfile --ignore-scripts
+pnpm install --frozen-lockfile
 pnpm build:libs
 
 echo "==> Typecheck Calendar mobile"

@@ -3,7 +3,7 @@ const path = require('path');
 
 const sa2kitRnSrc = path.resolve(
   __dirname,
-  '../../../sa2kit-ui/packages/rn/src',
+  '../../packages/sa2kit-ui/packages/rn/src',
 );
 
 module.exports = {
