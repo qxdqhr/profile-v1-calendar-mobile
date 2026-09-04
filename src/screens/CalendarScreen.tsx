@@ -8,7 +8,7 @@ import {
   View,
 } from 'react-native';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
-import type { CalendarEvent } from '@profile/calendar-core/shared';
+import type { CalendarEvent } from 'sa2kit/business/calendar/domain';
 import {
   addMonths,
   formatDateTime,
@@ -16,7 +16,7 @@ import {
   getMonthEnd,
   getMonthStart,
   isSameDay,
-} from '@profile/calendar-core/shared';
+} from 'sa2kit/business/calendar/domain';
 
 import { CalendarToolbar } from '../components/CalendarToolbar';
 import { EventChip } from '../components/EventChip';

@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Alert, ScrollView, Text, View } from 'react-native';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
-import type { CalendarEvent } from '@profile/calendar-core/shared';
-import { formatDateTime } from '@profile/calendar-core/shared';
+import type { CalendarEvent } from 'sa2kit/business/calendar/domain';
+import { formatDateTime } from 'sa2kit/business/calendar/domain';
 
 import { useAuth } from '../auth/AuthContext';
 import type { RootStackParamList } from '../navigation';

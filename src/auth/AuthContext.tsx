@@ -10,7 +10,7 @@ import {
 } from 'react';
 import { AppState } from 'react-native';
 
-import { CalendarApiClient } from '@profile/calendar-core/shared';
+import { CalendarApiClient } from 'sa2kit/business/calendar/domain';
 
 import {
   LOGIN_WEB_URL,

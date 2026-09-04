@@ -1,4 +1,4 @@
-import type { CalendarEvent } from '@profile/calendar-core/shared';
+import type { CalendarEvent } from 'sa2kit/business/calendar/domain';
 import { Pressable, Text, View } from 'react-native';
 
 type Props = {

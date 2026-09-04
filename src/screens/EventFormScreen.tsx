@@ -7,7 +7,7 @@ import {
   allDayBoundsFromDate,
   ensureEndAfterStart,
   type EventFormData,
-} from '@profile/calendar-core/shared';
+} from 'sa2kit/business/calendar/domain';
 
 import { useAuth } from '../auth/AuthContext';
 import type { RootStackParamList } from '../navigation';

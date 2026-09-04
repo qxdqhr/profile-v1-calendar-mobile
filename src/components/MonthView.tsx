@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Pressable, Text, View } from 'react-native';
-import type { CalendarEvent } from '@profile/calendar-core/shared';
+import type { CalendarEvent } from 'sa2kit/business/calendar/domain';
 import {
   WEEKDAY_LABELS,
   getMonthStart,
@@ -8,7 +8,7 @@ import {
   isSameDay,
   isSameMonth,
   isToday,
-} from '@profile/calendar-core/shared';
+} from 'sa2kit/business/calendar/domain';
 
 import { EventChip } from './EventChip';
 
